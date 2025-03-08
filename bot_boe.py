@@ -1,4 +1,4 @@
-import os  # 🔹 Asegúrate de agregar esta línea
+import os
 from flask import Flask, request
 from bs4 import BeautifulSoup
 import requests
@@ -37,7 +37,7 @@ def buscar():
         return "⚠️ Debes proporcionar una consulta. Ejemplo: /buscar?q=impuestos"
     return buscar_en_boe(consulta)
 
-# 🔹 Ajuste para que funcione en Railway con el puerto correcto
+# 🔹 Configurar el puerto para Railway
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 8080))  # Usa el puerto de Railway si está definido
     app.run(host="0.0.0.0", port=port)
