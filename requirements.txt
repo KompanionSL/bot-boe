@@ -1,4 +1,5 @@
 flask
-beautifulsoup4
-requests
 gunicorn
+selenium
+webdriver-manager
+chromium-chromedriver
