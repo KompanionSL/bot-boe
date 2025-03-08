@@ -1,1 +1,1 @@
-web: gunicorn bot_boe:app --timeout 120
+web: bash start.sh
